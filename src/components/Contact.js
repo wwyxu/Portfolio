@@ -14,15 +14,14 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
-    const form = e.currentTarget;
     setResult({
       success: null,
     });
+    const form = e.currentTarget;
+    e.preventDefault();
     if (form.checkValidity() === false) {
-      e.preventDefault();
       e.stopPropagation();
     }
-    e.preventDefault();
     setLoading(true);
     axios
       .post("/contact", { ...state })
@@ -53,38 +52,47 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="contact-container container-fluid">
-      <div className="container pt-5 px-5 pb-5">
-        <h3 className="mb-2 pb-2 font-weight-bold text-white">Contact</h3>
-        <p className="text-white-50">
+    <div id="contact" className="contact-container pt-5 px-5">
+      <div className="row justify-content-center mb-4">
+        <div className="column">
+          <h2 className="heading font-weight-bold pb-1 text-center section_heading text-white">
+            Contact
+          </h2>
+        </div>
+      </div>
+      <div className="container text-white-50">
+        <p>
           Feel free to contact me through the form below if you have any
           enquires or would just like to have a casual chat, thank you.
         </p>
         <form onSubmit={sendEmail}>
-          <Form.Group className="my-2" controlId="name">
-            <Form.Label className="text-white-50">Name</Form.Label>
-            <Form.Control
-              required
-              type="text"
-              name="name"
-              value={state.name}
-              placeholder="Name"
-              onChange={onChange}
-            />
-          </Form.Group>
-          <Form.Group className="my-2" controlId="email">
-            <Form.Label className="text-white-50">Email</Form.Label>
-            <Form.Control
-              required
-              type="text"
-              name="email"
-              value={state.email}
-              placeholder="Email"
-              onChange={onChange}
-            />
-          </Form.Group>
+          <div className="row no-gutters">
+            <div className="col-6">
+              <Form.Group className="my-2 mr-1" controlId="name">
+                <Form.Control
+                  required
+                  type="text"
+                  name="name"
+                  value={state.name}
+                  placeholder="Name"
+                  onChange={onChange}
+                />
+              </Form.Group>
+            </div>
+            <div className="col-6">
+              <Form.Group className="my-2 ml-2" controlId="email">
+                <Form.Control
+                  required
+                  type="text"
+                  name="email"
+                  value={state.email}
+                  placeholder="Email"
+                  onChange={onChange}
+                />
+              </Form.Group>
+            </div>
+          </div>
           <Form.Group className="my-2" controlId="message">
-            <Form.Label className="text-white-50">Message</Form.Label>
             <Form.Control
               required
               as="textarea"
@@ -106,7 +114,7 @@ const Contact = () => {
               />
             </Button>
           ) : (
-            <Button className="mt-1" variant="info" type="submit">
+            <Button className="mt-1" variant="secondary" type="submit">
               Submit{" "}
               {result && (
                 <i
@@ -118,6 +126,18 @@ const Contact = () => {
             </Button>
           )}
         </form>
+      </div>
+      <div className="container">
+        <br />
+        <hr />
+      </div>
+      <div className="text-center text-white-50 pb-2">
+        <a href="#landing" className="arrow">
+          <i className="fas fa-arrow-circle-up"></i>
+        </a>
+        <h6>
+          <a>{"  "}William Xu</a> | &copy; 2021
+        </h6>
       </div>
     </div>
   );

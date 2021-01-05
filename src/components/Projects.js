@@ -15,14 +15,20 @@ import technews2 from "../img/technews2.png";
 import technews3 from "../img/technews3.png";
 
 const Projects = () => (
-  <div id="projects" className="container">
-    <div className="row p-5">
-      <h3 className="mb-3 pb-3 text-white font-weight-bold">Projects</h3>
+  <div id="projects" className="container p-5">
+    <div className="row justify-content-center mb-4">
+      <div className="column">
+        <h2 className="heading font-weight-bold pb-1 text-center section_heading">
+          Projects
+        </h2>
+      </div>
+    </div>
+    <div className="row">
       <div className="card-deck">
         <div className="card">
           <div data-toggle="modal" data-target="#bugtrackerModal">
-            <a>
-              <img className="card-img-top" src={bugtracker4}></img>
+            <a className="card-img-top">
+              <img className="card-img-top" src={bugtracker5}></img>
             </a>
           </div>
           <div className="modal fade" id="bugtrackerModal">
@@ -72,7 +78,7 @@ const Projects = () => (
                       <div className="carousel-item active">
                         <img
                           className="d-block w-100"
-                          src={bugtracker4}
+                          src={bugtracker5}
                           alt="First Slide"
                         ></img>
                       </div>
@@ -100,7 +106,7 @@ const Projects = () => (
                       <div className="carousel-item">
                         <img
                           className="d-block w-100"
-                          src={bugtracker5}
+                          src={bugtracker4}
                           alt="Fifth Slide"
                         ></img>
                       </div>
@@ -147,8 +153,19 @@ const Projects = () => (
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://mernbugtracker.herokuapp.com/"
+                type="button"
+                className="btn btn-info"
               >
-                Demo <i className="fas fa-external-link-alt"></i>{" "}
+                Project <i className="fas fa-external-link-alt"></i>
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/Time-Remembered/Bug-Tracker"
+                type="button"
+                className="btn btn-dark ml-2"
+              >
+                GitHub <i className="fas fa-external-link-alt"></i>
               </a>
             </p>
           </div>
@@ -162,7 +179,7 @@ const Projects = () => (
 
         <div className="card">
           <div data-toggle="modal" data-target="#technewsModal">
-            <a>
+            <a className="card-img-top">
               <img className="card-img-top" src={technews2}></img>
             </a>
           </div>
@@ -256,16 +273,28 @@ const Projects = () => (
           <div className="card-body">
             <h5 className="card-title">Tech News App</h5>
             <p className="card-text text-secondary">
-              A react application which fetches data from The New York Times
-              News API and maps tech articles to cards.
+              A react application created with hooks, fetches data from The New
+              York Times News API and maps tech articles to cards. Optimized for
+              mobile and desktop.
             </p>
             <p>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://tech-news-eight.vercel.app/"
+                type="button"
+                className="btn btn-info"
               >
-                Demo <i className="fas fa-external-link-alt"></i>{" "}
+                Project <i className="fas fa-external-link-alt"></i>
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/Time-Remembered/NYT-Tech-News"
+                type="button"
+                className="btn btn-dark ml-2"
+              >
+                GitHub <i className="fas fa-external-link-alt"></i>
               </a>
             </p>
           </div>
@@ -277,7 +306,7 @@ const Projects = () => (
         </div>
         <div className="card">
           <div data-toggle="modal" data-target="#mobileModal">
-            <a>
+            <a className="card-img-top">
               <img className="card-img-top" src={tft}></img>
             </a>
           </div>
@@ -401,9 +430,20 @@ const Projects = () => (
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://tech-news-eight.vercel.app/"
+                href="https://drive.google.com/drive/folders/1Fpa89QveekBv4j_so2ZXna9WiO43zBsG?usp=sharing"
+                type="button"
+                className="btn btn-info"
               >
-                Download <i className="fas fa-external-link-alt"></i>{" "}
+                Download <i className="fas fa-external-link-alt"></i>
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/Time-Remembered/Teamfight-Tactics-Item-Viewer"
+                type="button"
+                className="btn btn-dark ml-2"
+              >
+                GitHub <i className="fas fa-external-link-alt"></i>
               </a>
             </p>
           </div>
