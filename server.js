@@ -11,8 +11,8 @@ app.use(express.static(dirPath));
 
 app.post("/contact", (req, res) => {
   const message = {
-    from: "wwyxhelper@gmail.com",
-    to: "wwyxhelper@gmail.com",
+    from: req.body.email,
+    to: process.env.email,
     subject: req.body.message,
     html: `
       <ul>
@@ -27,8 +27,8 @@ app.post("/contact", (req, res) => {
   var transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
-      user: "wwyxhelper@gmail.com",
-      pass: "Mobula2231gobula",
+      user: process.env.email,
+      pass: process.env.password,
     },
     tls: {
       rejectUnauthorized: false,
