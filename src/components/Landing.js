@@ -37,7 +37,7 @@ const Landing = () => (
           </h1>
           <hr />
           <ul>
-            <a href="https://www.github.com" target="_blank">
+            <a href="https://github.com/Time-Remembered" target="_blank">
               <i className="fab fa-github"></i>
             </a>
           </ul>
