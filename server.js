@@ -11,8 +11,8 @@ app.use(express.static(dirPath));
 
 app.post("/contact", (req, res) => {
   const message = {
-    from: req.body.email,
-    to: process.env.email,
+    from: "wwyxhelper@gmail.com",
+    to: "wwyxhelper@gmail.com",
     subject: req.body.message,
     html: `
       <ul>
@@ -27,8 +27,8 @@ app.post("/contact", (req, res) => {
   var transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
-      user: process.env.email,
-      pass: process.env.password,
+      user: "wwyxhelper@gmail.com",
+      pass: "Mobula2231gobula",
     },
     tls: {
       rejectUnauthorized: false,
@@ -48,6 +48,8 @@ app.post("/contact", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
   console.log("Server is running on port 3000");
 });

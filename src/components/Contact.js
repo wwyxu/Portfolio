@@ -104,7 +104,7 @@ const Contact = () => {
             />
           </Form.Group>
           {loading ? (
-            <Button className="mt-1" variant="info" type="submit" disabled>
+            <Button className="mt-1" variant="secondary" type="submit" disabled>
               <Spinner
                 as="span"
                 animation="border"
