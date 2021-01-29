@@ -65,7 +65,7 @@ const Projects = () => (
                     rel="noopener noreferrer"
                     href="https://mernbugtracker.herokuapp.com/"
                     type="button"
-                    className="btn btn-info mr-2"
+                    className="btn btn-info mx-1"
                   >
                     Project <i className="fas fa-external-link-alt"></i>
                   </a>
@@ -74,7 +74,7 @@ const Projects = () => (
                     rel="noopener noreferrer"
                     href="https://github.com/wwyxu/Bug-Tracker"
                     type="button"
-                    className="btn btn-dark"
+                    className="btn btn-dark mx-1"
                   >
                     GitHub <i className="fas fa-external-link-alt"></i>
                   </a>
@@ -114,7 +114,7 @@ const Projects = () => (
                     rel="noopener noreferrer"
                     href="https://tech-news-eight.vercel.app/"
                     type="button"
-                    className="btn btn-info mr-2"
+                    className="btn btn-info mx-1"
                   >
                     Project <i className="fas fa-external-link-alt"></i>
                   </a>
@@ -123,7 +123,7 @@ const Projects = () => (
                     rel="noopener noreferrer"
                     href="https://github.com/wwyxu/NYT-Tech-News"
                     type="button"
-                    className="btn btn-dark"
+                    className="btn btn-dark mx-1"
                   >
                     GitHub <i className="fas fa-external-link-alt"></i>
                   </a>
@@ -205,7 +205,7 @@ const Projects = () => (
                     rel="noopener noreferrer"
                     href="https://drive.google.com/drive/folders/1Fpa89QveekBv4j_so2ZXna9WiO43zBsG?usp=sharing"
                     type="button"
-                    className="btn btn-info mr-2"
+                    className="btn btn-info mx-1"
                   >
                     Project <i className="fas fa-external-link-alt"></i>
                   </a>
@@ -214,7 +214,7 @@ const Projects = () => (
                     rel="noopener noreferrer"
                     href="https://github.com/wwyxu/Teamfight-Tactics-Items"
                     type="button"
-                    className="btn btn-dark"
+                    className="btn btn-dark mx-1"
                   >
                     GitHub <i className="fas fa-external-link-alt"></i>
                   </a>
@@ -252,7 +252,7 @@ const Projects = () => (
                     rel="noopener noreferrer"
                     href="https://bmi-tracker.vercel.app/"
                     type="button"
-                    className="btn btn-info mr-2"
+                    className="btn btn-info mx-1"
                   >
                     Project <i className="fas fa-external-link-alt"></i>
                   </a>
@@ -261,7 +261,7 @@ const Projects = () => (
                     rel="noopener noreferrer"
                     href="https://github.com/wwyxu/BMI-Calculator"
                     type="button"
-                    className="btn btn-dark"
+                    className="btn btn-dark mx-1"
                   >
                     GitHub <i className="fas fa-external-link-alt"></i>
                   </a>
