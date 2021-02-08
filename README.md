@@ -8,5 +8,5 @@ Technologies Used:
 Backend:  
 Node.js, Nodemailer
 Frontend:  
-React, Bootstrap  
+React, Bootstrap. HTML, CSS  
 
