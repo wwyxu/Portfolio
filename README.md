@@ -6,7 +6,7 @@
 
 Technologies Used:  
 Backend:  
-Node.js, Nodemailer
+Node.js, Nodemailer  
 Frontend:  
 React, Bootstrap. HTML, CSS  
 
