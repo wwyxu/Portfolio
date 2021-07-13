@@ -4,7 +4,7 @@ const skillList = ({ name }) => {
   return (
     <>
       <li className="text">
-        <div id="chevron-arrow-right" className="mr-1"></div>
+        <div id="chevron-arrow-right" className="mr-1" />
         {"   "}
         {name}
       </li>

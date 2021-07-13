@@ -66,7 +66,7 @@ const About = () => {
               </a>
             </p>
             <p className="text">
-              <div id="chevron-arrow-right" className="mr-1"></div> {"   "}
+              <div id="chevron-arrow-right" className="mr-1" /> {"   "}
               From: <a className="text-secondary">Melbourne, Australia</a>
             </p>
           </div>

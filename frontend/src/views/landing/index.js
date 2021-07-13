@@ -17,7 +17,7 @@ const Landing = () => (
           </h1>
           <hr />
           <ul>
-            <i className="fab fa-js text-white"></i>
+            <i className="fab fa-js text-white" />
             <i className="fab fa-react pl-2 text-white" />
             <i className="fab fa-node pl-2 text-white" />
             <a href="https://github.com/wwyxu" target="_blank">
