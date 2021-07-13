@@ -13,8 +13,8 @@ const projectCard = ({ delay, target, img }) => {
         <div data-toggle="modal" data-target={target}>
           <a className="img-top">
             <div class="content">
-              <img className="card-img-top" src={img} alt={target}/>
-              <div class="content-overlay"/>
+              <img className="card-img-top" src={img} alt={target} />
+              <div class="content-overlay" />
               <div class="content-details fadeIn-bottom">
                 <h5 type="button">View</h5>
               </div>

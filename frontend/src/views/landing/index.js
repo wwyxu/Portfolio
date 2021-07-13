@@ -18,14 +18,14 @@ const Landing = () => (
           <hr />
           <ul>
             <i className="fab fa-js text-white"></i>
-            <i className="fab fa-react pl-2 text-white"></i>
-            <i className="fab fa-node pl-2 text-white"></i>
+            <i className="fab fa-react pl-2 text-white" />
+            <i className="fab fa-node pl-2 text-white" />
             <a href="https://github.com/wwyxu" target="_blank">
-              <i className="fab fa-github pl-2"></i>
+              <i className="fab fa-github pl-2" />
             </a>
-            <i className="fab fa-bootstrap pl-2 text-white"></i>
-            <i className="fab fa-java pl-2 text-white"></i>
-            <i className="fas fa-database pl-2 text-white"></i>
+            <i className="fab fa-bootstrap pl-2 text-white" />
+            <i className="fab fa-java pl-2 text-white" />
+            <i className="fas fa-database pl-2 text-white" />
           </ul>
         </div>
       </div>
