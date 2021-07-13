@@ -14,7 +14,7 @@ const projectCard = ({ delay, target, img }) => {
           <a className="img-top">
             <div class="content">
               <img className="card-img-top" src={img} alt={target}></img>
-              <div class="content-overlay"></div>
+              <div class="content-overlay"/>
               <div class="content-details fadeIn-bottom">
                 <h5 type="button">View</h5>
               </div>
