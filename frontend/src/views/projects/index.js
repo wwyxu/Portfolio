@@ -9,20 +9,20 @@ import bmi2 from "../../assets/img/bmi2.png";
 import bugtracker1 from "../../assets/img/bugtracker1.png";
 import bugtracker2 from "../../assets/img/bugtracker2.png";
 import bugtracker3 from "../../assets/img/bugtracker3.png";
-import nodemailer1 from "../../assets/img/nodemailer.jpg";
 import flip from "../../assets/img/flip.png";
+import form1 from "../../assets/img/form1.png";
 import news1 from "../../assets/img/news.png";
 import news2 from "../../assets/img/news2.png";
+import nodemailer1 from "../../assets/img/nodemailer.jpg";
 import tft from "../../assets/img/tft.jpg";
-import form1 from "../../assets/img/form1.png";
 import tft1 from "../../assets/img/tft1.png";
 import tft2 from "../../assets/img/tft2.png";
 import tft3 from "../../assets/img/tft3.png";
 import userConfigurationSystem1 from "../../assets/img/user-configuration-system.png";
-import ProjectModal from "./project-modal";
-import ProjectCard from "./project-card";
 import Anchor from "../common/anchor";
 import projectData from "./data";
+import ProjectCard from "./project-card";
+import ProjectModal from "./project-modal";
 
 const Projects = () => {
   useEffect(() => {

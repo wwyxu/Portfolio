@@ -32,7 +32,7 @@ const About = () => {
             <h5 className="font-weight-bold my-3">
               I am William Xu, a full stack software developer.
             </h5>
-            <p></p>
+            <p />
             <p className="text-secondary">
               I am a software developer living in Melbourne, Australia. My core
               competency is creating web applications with React, TypeScript,
@@ -50,13 +50,13 @@ const About = () => {
               Get in touch
             </p>
             <hr />
-            <div className="row"></div>
+            <div className="row" />
             <p className="text">
-              <div id="chevron-arrow-right" className="mr-1"></div>
+              <div id="chevron-arrow-right" className="mr-1" />
               {"   "}Name: <a className="text-secondary">William Xu</a>
             </p>
             <p className="text">
-              <div id="chevron-arrow-right" className="mr-1"></div> {"   "}
+              <div id="chevron-arrow-right" className="mr-1" /> {"   "}
               Email:{" "}
               <a
                 href="mailto: william-xu@live.com.au"
@@ -71,17 +71,12 @@ const About = () => {
             </p>
           </div>
           <div className="col-md-2">
-            <img
-              className="rounded"
-              src={avatar}
-              width="150"
-              alt="Avatar"
-            ></img>
+            <img className="rounded" src={avatar} width="150" alt="Avatar" />
           </div>
         </div>
       </div>
     </>
   );
-}
+};
 
 export default About;

@@ -26,7 +26,7 @@ const Contact = () => {
     });
     const form = e.currentTarget;
     e.preventDefault();
-    if (form.checkValidity() === false) {
+    if (!form.checkValidity()) {
       e.stopPropagation();
     }
     setLoading(true);
@@ -61,7 +61,7 @@ const Contact = () => {
   const handleClick = (e) => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+  };
 
   return (
     <>
@@ -155,7 +155,7 @@ const Contact = () => {
                     className={`${
                       result.success ? "fas fa-check" : "fas fa-times"
                     } text-center`}
-                  ></i>
+                  />
                 )}
               </button>
             )}
@@ -165,16 +165,16 @@ const Contact = () => {
           <br />
           <p>
             <a href="https://dev.to/wwyxu" target="_blank">
-              <i className="fab fa-dev mr-4"></i>
+              <i className="fab fa-dev mr-4" />
             </a>
             {/* <a href="https://codepen.io/wwyxu" target="_blank">
               <i className="fab fa-codepen"></i>
             </a> */}
             <a onClick={() => handleClick()} className="arrow" type="button">
-              <i className="fas fa-arrow-circle-up"></i>
+              <i className="fas fa-arrow-circle-up" />
             </a>
             <a href="https://github.com/wwyxu " target="_blank">
-              <i className="fab fa-github-square ml-4"></i>
+              <i className="fab fa-github-square ml-4" />
             </a>
           </p>
           <p>
